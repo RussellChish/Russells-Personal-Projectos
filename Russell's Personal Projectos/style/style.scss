@@ -1,0 +1,345 @@
+Asedfghjnm
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  overflow-x: hidden;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+//||||||||||||||||||||||||||||||| Sass.CSS||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+.container {
+  #nav {
+    height: 50px;
+    color: rgb(19, 18, 18);
+    margin-top: 5px;
+    // h3 {
+    //   text-align: center;
+    // }
+  }
+
+ 
+
+  .list {
+    display: flex;
+    padding: 5px;
+    margin-left: 50px;
+  }
+
+  #hero {
+    padding-top: 90px;
+  }
+
+  button {
+    color: rgb(12, 12, 12);
+    background-color: rgb(255, 255, 255);
+    border: 0;
+    padding: 10px;
+    text-decoration: underline;
+  }
+
+  img {
+    width: 100%;
+    display: flex;
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+// About Us
+#why-us {
+  text-align: center;
+  min-height: 60vh;
+  padding-top: 80px;
+  padding-bottom: 10px;
+
+  a {
+    color: rgb(224, 224, 55);
+    text-decoration: none;
+  }
+  h4{
+    color: rgb(224, 224, 55);
+    font-size: 60px;
+  }
+}
+
+
+
+// collections
+#collections {
+  min-height: 80vh;
+
+  h4 {
+    color: rgb(224, 224, 55);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 80px;
+  }
+
+  .col-md-4 h3 {
+    position: relative;
+    top: -81px;
+    color: rgb(255, 255, 255);
+    font-size: 80px;
+  }
+
+
+  .col-md-4:hover {
+    transform: scale(.9);
+    transition: 0.4s ease;
+  }
+
+}
+
+// products
+#products {
+  min-height: 60vh;
+  padding-top: 20px;
+
+
+  h4 {
+    color: rgb(224, 224, 55);
+    font-size: 80px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  h5 {
+    color: rgb(224, 224, 55);
+  }
+}
+
+// sales
+#sale {
+  padding-top: 40px;
+  padding: 40px;
+  min-height: 20vh;
+  padding-top: 100px;
+
+  h5 {
+    color: rgb(224, 224, 55);
+  }
+
+  .col-md-4 {
+    padding-top: 150px;
+    font-size: 50px;
+  }
+
+}
+
+
+/*Frequenty Asked Questions*/
+
+.faq {
+  padding: 60px 0;
+}
+
+.faq h2 {
+  text-align: center;
+}
+
+.faq .faq-list {
+  padding: 0;
+  list-style: none;
+}
+
+.faq .faq-list li {
+  border-bottom: 1px solid #ddd;
+}
+
+.faq .faq-list a {
+  padding: 18px 0;
+  display: block;
+  position: relative;
+  font-family: #fdd90e;
+  font-size: 22px;
+  line-height: 1;
+  font-weight: 500;
+  padding-right: 20px;
+}
+
+.faq .faq-list i {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  top: 16px;
+}
+
+.faq .faq-list p {
+  margin-bottom: 20px;
+}
+
+.faq .faq-list a.collapse {
+  color: #edfd0e;
+}
+
+.faq .faq-list a.collapsed {
+  color: #343a40;
+}
+
+.faq .faq-list a.collapsed:hover {
+  color: #fde50e;
+  transition: 0.2s;
+}
+
+.faq .faq-list a.collapsed i::before {
+  content: "\ea99" !important;
+}
+
+/*Contact Us*/
+
+// footer
+#contact {
+  color: rgb(255, 255, 255);
+  min-height: 10vh;
+  background-color: rgb(0, 0, 0);
+
+  h6 {
+    color: rgb(255, 255, 255);
+
+  }
+}
+
+// footer
+#credits {
+  min-height: 10vh;
+  color: rgb(255, 255, 255);
+  background-color: #343a40;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 5px;
+}
